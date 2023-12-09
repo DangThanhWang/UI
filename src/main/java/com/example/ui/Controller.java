@@ -22,7 +22,7 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         FXMLLoader other = new FXMLLoader();
-        other.setLocation(getClass().getResource("/FXML/Content/Home/chat-bot-rep.fxml"));
+        other.setLocation(getClass().getResource("chat-bot-rep.fxml"));
         HBox chatBotBox = null;
         try {
             chatBotBox = other.load();
@@ -46,7 +46,7 @@ public class Controller implements Initializable {
         }
 
         FXMLLoader loader = new FXMLLoader();
-        loader.setLocation(getClass().getResource("/FXML/Content/Home/user-rep.fxml"));
+        loader.setLocation(getClass().getResource("user-rep.fxml"));
         HBox userBox = null;
         try {
             userBox = loader.load();
@@ -58,7 +58,7 @@ public class Controller implements Initializable {
         view.getChildren().add(userBox);
 
         FXMLLoader other = new FXMLLoader();
-        other.setLocation(getClass().getResource("/FXML/Content/Home/chat-bot-rep.fxml"));
+        other.setLocation(getClass().getResource("chat-bot-rep.fxml"));
         HBox chatBotBox = null;
         try {
             chatBotBox = other.load();

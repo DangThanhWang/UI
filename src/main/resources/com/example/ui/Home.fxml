@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane onMouseClicked="#animation" prefHeight="360.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ui.Controller">
+<AnchorPane onMouseClicked="#animation" prefHeight="400.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ui.Controller">
    <ImageView fitHeight="400.0" fitWidth="350.0" opacity="0.48" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@chatbg.png" />
@@ -24,15 +24,18 @@
          <Insets left="20.0" right="20.0" top="20.0" />
       </padding>
    </ScrollPane>
-   <Button alignment="CENTER" layoutX="514.0" layoutY="469.0" mnemonicParsing="false" onAction="#sendMessage" stylesheets="@home.css" textAlignment="CENTER" />
+   <Button alignment="CENTER" layoutX="288.0" layoutY="346.0" mnemonicParsing="false" onAction="#sendMessage" stylesheets="@home.css" textAlignment="CENTER">
+      <graphic>
+         <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@sendchat.png" />
+            </image>
+         </ImageView>
+      </graphic>
+   </Button>
    <TextField fx:id="userMessage" layoutX="26.0" layoutY="348.0" prefHeight="24.0" prefWidth="254.0" style="-fx-background-radius: 17 17 17 17; -fx-background-color: transparent; -fx-border-radius: 17 17 17 17; -fx-font-weight: bold;" stylesheets="@home.css">
       <font>
          <Font size="14.0" />
       </font>
    </TextField>
-   <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="290.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@sendchat.png" />
-      </image>
-   </ImageView>
 </AnchorPane>
